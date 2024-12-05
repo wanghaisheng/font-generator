@@ -63,6 +63,11 @@ export const styleMetadata = async ({ params }: { params: { locale: LocaleType, 
       title = t('frontend.style.cursive-font.meta.title');
       description = t('frontend.style.cursive-font.meta.description');
       break;
+    case "alternating":
+      title = t('frontend.style.alternating.meta.title');
+      description = t('frontend.style.alternating.meta.description');
+      break;
+
     default:
       title = "";
   }
@@ -100,6 +105,8 @@ export const getStyleName = async ({ params }: Readonly<{ params: { locale: Loca
       return t("frontend.slug.menu.bubble-text");
     case "square-text":
       return t("frontend.slug.menu.square-text");
+    case "alternating":
+      return t("frontend.slug.menu.alternating");
     default:
       return "";
   }
@@ -116,6 +123,11 @@ export const topicMetadata = async ({ params }: { params: { topic?: TopicKey } }
       title = t('frontend.topic.facebook.meta.title');
       description = t('frontend.topic.facebook.meta.description');
       break;
+    case "handwriting":
+      title = t('frontend.topic.handwriting.meta.title');
+      description = t('frontend.topic.handwriting.meta.description');
+      break;
+
     default:
       title = t('frontend.topic.index.meta.title');
   }
@@ -132,6 +144,8 @@ export const getTopicName = async ({ params }: Readonly<{ params: { topic: Topic
   switch (topic) {
     case "facebook":
       return "FaceBook";
+    case "handwriting":
+      return t("frontend.slug.topic.handwriting");;
     default:
       return "";
   }

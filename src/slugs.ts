@@ -13,14 +13,16 @@ export const styleKeys = [
   "underline",
   "bubble-text",
   "square-text",
-  "cursive-font"
+  "cursive-font",
+  "alternating",
 ] as const;
 export type StyleKey = typeof styleKeys[number];
 
 export const topicKeys = [
   "facebook",
   "twitter",
-  "whatsapp"
+  "whatsapp",
+  "handwriting"
 ] as const;
 
 export type TopicKey = typeof topicKeys[number];
@@ -33,7 +35,7 @@ export const styleFonts: Record<StyleKey, FontKey[]> = {
     "doubleStruck", "smallCaps"
   ],
   "cool": [
-    "circled", "circledNegative", "fullwidth", "squared",
+    "bubble", "blackBubble", "fullwidth", "squared",
     "vaiLetterlike", "bamumLetterlike", "smallCherokeeLetterlike", "canadianAboriginalLetterlike1", "canadianAboriginalLetterlike2",
     "squaredNegative", "inverted", "mirrored", "rotatedLeft", "rotatedRight"
   ],
@@ -41,15 +43,19 @@ export const styleFonts: Record<StyleKey, FontKey[]> = {
     "smallCaps", "superscript", "subscript", "sansItalic", "serifItalic"
   ],
   "bold-text": [
-    "sansBold", "serifBold", "boldScript", "boldFraktur", "serifBoldItalic"
+    "sansBold", "serifBold", "boldScript", "boldFraktur", "serifBoldItalic",
+    "alternatingSansBold", "alternatingSansBoldItalic",
+    "alternatingSerifBold", "alternatingSerifBoldItalic"
   ],
   "italic": [
-    "sansItalic", "serifItalic", "serifBoldItalic", "sansBoldItalic"
+    "sansItalic", "serifItalic", "serifBoldItalic", "sansBoldItalic",
+    "alternatingSansBoldItalic", "alternatingSerifBoldItalic"
   ],
   "bold-italic": [
     "sansBoldItalic", "serifBoldItalic",
     "sansItalic", "serifItalic",
-    "sansBold", "serifBold", "boldScript", "boldFraktur"
+    "sansBold", "serifBold", "boldScript", "boldFraktur",
+    "alternatingSansBoldItalic", "alternatingSerifBoldItalic"
   ],
   "underline": [
     "smallCaps",
@@ -71,10 +77,25 @@ export const styleFonts: Record<StyleKey, FontKey[]> = {
     "subscript"
   ],
   "bubble-text": [
-    "circled", "circledNegative"
+    "bubble", "blackBubble", "alternatingBubble"
   ],
   "square-text": [
-    "squared", "squaredNegative"
+    "squared", "squaredNegative", "alternatingSquared", "block"
+  ],
+  "alternating": [
+    "alternatingSerifBold",
+    "alternatingSansBold",
+    "alternatingBubble",
+    "alternatingSquared",
+    "alternatingBoldScript",
+    "alternatingBoldFraktur",
+    "alternatingSansBoldItalic",
+    "alternatingSerifBoldItalic",
+    "alternatingItalicBold",
+    "alternatingCursiveScriptBold",
+    "alternatingFraktur",
+    "alternatingBold",
+    "alternatingBlackBubbleSquared"
   ],
   "sans-serif": [
     "sansSerif",
@@ -90,6 +111,9 @@ export const styleFonts: Record<StyleKey, FontKey[]> = {
 };
 
 export const topicFonts: Record<TopicKey, FontKey[]> = {
+  handwriting: [
+    "script", "boldScript", "subscript"
+  ],
   facebook: [
     "fraktur",
     "boldFraktur",
@@ -99,7 +123,13 @@ export const topicFonts: Record<TopicKey, FontKey[]> = {
     "sansBoldItalic",
     "serifBold",
     "serifItalic",
-    "serifBoldItalic"
+    "serifBoldItalic",
+    "alternatingSerifBold",
+    "alternatingSansBold",
+    "alternatingBoldScript",
+    "alternatingBoldFraktur",
+    "alternatingSansBoldItalic",
+    "alternatingSerifBoldItalic"
   ],
   twitter: [
     "fraktur",
@@ -110,7 +140,13 @@ export const topicFonts: Record<TopicKey, FontKey[]> = {
     "sansBoldItalic",
     "serifBold",
     "serifItalic",
-    "serifBoldItalic"
+    "serifBoldItalic",
+    "alternatingSerifBold",
+    "alternatingSansBold",
+    "alternatingBoldScript",
+    "alternatingBoldFraktur",
+    "alternatingSansBoldItalic",
+    "alternatingSerifBoldItalic"
   ],
   whatsapp: [
     "fraktur",
@@ -121,6 +157,12 @@ export const topicFonts: Record<TopicKey, FontKey[]> = {
     "sansBoldItalic",
     "serifBold",
     "serifItalic",
-    "serifBoldItalic"
+    "serifBoldItalic",
+    "alternatingSerifBold",
+    "alternatingSansBold",
+    "alternatingBoldScript",
+    "alternatingBoldFraktur",
+    "alternatingSansBoldItalic",
+    "alternatingSerifBoldItalic"
   ]
-}
+} 

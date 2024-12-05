@@ -78,6 +78,11 @@
           "title": "Cursieve lettertypegenerator | \nMaak online elegante handschriftlettertypen",
           "description": "Transformeer uw tekst in prachtige cursieve lettertypen met onze gratis Cursive Font Generator. \nCreëer unieke tekst in handschriftstijl voor sociale media, ontwerpen en meer. \nProbeer het nu!"
         }
+      },
+      "alternating": {
+        "meta": {
+          "title": "Alternerende lettertypegenerator"
+        }
       }
     },
     "slug": {
@@ -92,7 +97,11 @@
         "underline": "Onderstrepen",
         "bubble-text": "Bellentekst",
         "square-text": "Vierkante tekst",
-        "cursive": "Cursief"
+        "cursive": "Cursief",
+        "alternating": "Afwisselend"
+      },
+      "topic": {
+        "handwriting": "Handschrift"
       }
     },
     "meta": {
@@ -111,6 +120,12 @@
       "index": {
         "meta": {
           "title": "Onderwerpen voor lettertypegenerator"
+        }
+      },
+      "handwriting": {
+        "meta": {
+          "title": "Handschriftlettertypegenerator",
+          "description": "Gratis online handschriftlettertypegenerator. \nConverteer uw tekst naar stijlvolle Unicode-lettertypen en speciale tekens. \nCreëer unieke handgeschreven stijlen voor sociale media en berichtenuitwisseling."
         }
       }
     },
